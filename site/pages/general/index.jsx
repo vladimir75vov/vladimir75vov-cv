@@ -7,7 +7,6 @@ export default function General() {
     return (
         <>
             <Content>
-
                 <div className={"flex flex-row gap-8 w-11/12 mx-auto"}>
                     <div className={"w-72"}>
                         <div className={"flex flex-col items-center py-16 shadow-2xl rounded-3xl w-72"}>
@@ -17,8 +16,9 @@ export default function General() {
                                         <Image src={vladimir75vov} alt={"Budaev Vladimir"} className={"rounded-full"}/>
                                     </div>
                                 </div>
-                                <h2 className="text-center text-3xl mb-2 text-gray-700">Ali
-                                    Rahmani</h2>
+                                <h2 className="text-center text-3xl mb-2 text-gray-700">
+                                    Budaev Vladimir
+                                </h2>
                                 <h5 className="text-center text-gray-500 mb-2 text-lg">Front-End
                                     Developer</h5>
                                 <div className=" h-1 bg-gray-200 rounded overflow-hidden mb-4">
@@ -49,17 +49,17 @@ export default function General() {
                                         <div
                                             className={"flex flex-col items-center shadow-2xl rounded-3xl px-5 bg-blue-500"}>
                                             <button
-                                                className="flex flex-row justify-between items-center rounded-full hover:shadow-light-inner w-full  py-2 transition duration-300 shadow-light-inner ">
+                                                className={"flex flex-row justify-between items-center rounded-full hover:shadow-light-inner w-full  py-2 transition duration-300 shadow-light-inner"}>
                                                 <span>Portfolio</span>
                                                 <AiFillHome/>
                                             </button>
                                         </div>
                                     </li>
-                                    <li className="w-full">
+                                    <li className={"w-full"}>
                                         <div
                                             className={"flex flex-col items-center shadow-2xl rounded-3xl px-5 bg-blue-500"}>
                                             <button
-                                                className="flex flex-row justify-between items-center rounded-full hover:shadow-light-inner w-full  py-2 transition duration-300 shadow-light-inner ">
+                                                className={"flex flex-row justify-between items-center rounded-full hover:shadow-light-inner w-full py-2 transition duration-300 shadow-light-inner"}>
                                                 <span>Contact</span>
                                                 <AiFillHome/>
                                             </button>
@@ -69,9 +69,18 @@ export default function General() {
                             </div>
                         </div>
                     </div>
-                    <div className={"flex flex-col w-full "}>
+                    <div className={"flex flex-col w-full"}>
                         <div className={"flex flex-col items-center py-16 shadow-2xl rounded-3xl"}>
-aaaaa
+                            <div className={"flex flex-col shadow-light-outer bg-light rounded-3xl p-9"}>
+                                <main className={"flex flex-col items-center mt-16"}>
+                                    <h1 className={"text-5xl text-gray-700 text-center leading-tight"}>
+                                        Budaev Vladimir
+                                    </h1>
+                                    <h3 className={"mt-2 text-lg text-gray-500 text-center"}>
+                                        Web Develo
+                                    </h3>
+                                </main>
+                            </div>
                         </div>
                     </div>
                 </div>
