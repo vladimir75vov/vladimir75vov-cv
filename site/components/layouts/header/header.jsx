@@ -28,17 +28,7 @@ const Header = ({
                 <link rel={"icon"} href={"/favicon.ico"}/>
             </Head>
             <header className={"sidebar"}>
-                <Section>
-                    <div className="mb-8 w-48 shadow-2xl p-2 rounded-full">
-                        <div className="shadow-2xl p-2 rounded-full">
-                            <Image src={vladimir75vov} alt={"Budaev Vladimir"} className={"rounded-full"}/>
-                        </div>
-                    </div>
-                    <h2>Budaev Vladimir</h2>
-                    <h5>Dev</h5>
-                    <ul className={"flex flex-col gap-4 w-full items-center"}>
-                    </ul>
-                </Section>
+
             </header>
             {children}
         </>
