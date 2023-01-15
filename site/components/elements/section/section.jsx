@@ -1,9 +1,9 @@
 const Section = ({children}) => {
-    return(
+    return (
         <>
-        <div className={"flex flex-col items-center py-16 shadow-2xl rounded-3xl"}>
-            {children}
-        </div>
+            <div className={"flex flex-col items-center py-16 shadow-2xl rounded-3xl"}>
+                {children}
+            </div>
         </>
     )
 }

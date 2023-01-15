@@ -19,12 +19,14 @@ const Content = ({children, title, keywords, description, viewport, robots}) => 
                             <div className={""}>
                                 <div className={"flex flex-col items-center py-16 shadow-2xl rounded-3xl w-72"}>
                                     <div>
-                                        <div className="mb-8 w-48 shadow-2xl p-2 rounded-full">
-                                            <div className="shadow-2xl p-2 rounded-full">
-                                                <Image src={vladimir75vov} alt={"Budaev Vladimir"}
-                                                       className={"rounded-full"}/>
+                                        <Link href={"/general"}>
+                                            <div className="mb-8 w-48 shadow-2xl p-2 rounded-full">
+                                                <div className="shadow-2xl p-2 rounded-full">
+                                                    <Image src={vladimir75vov} alt={"Budaev Vladimir"}
+                                                           className={"rounded-full"}/>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </Link>
                                         <h2 className="text-center text-3xl mb-2 text-gray-700">
                                             Budaev Vladimir
                                         </h2>
@@ -37,9 +39,9 @@ const Content = ({children, title, keywords, description, viewport, robots}) => 
                                             <li className="w-full">
                                                 <Link href={"/general"}>
                                                     <div
-                                                        className={"flex flex-col items-center shadow-2xl rounded-3xl px-5 bg-blue-500"}>
+                                                        className={"flex flex-col items-center shadow-2xl rounded-3xl px-5 bg-blue-500 hover:bg-blue-600"}>
                                                         <button
-                                                            className="flex flex-row justify-between items-center rounded-full hover:shadow-light-inner w-full  py-2 transition duration-300 shadow-light-inner ">
+                                                            className="flex flex-row justify-between items-center rounded-full w-full py-2 transition duration-300 shadow-light-inner ">
                                                             <span>General</span>
                                                             <AiFillHome/>
                                                         </button>
@@ -49,9 +51,9 @@ const Content = ({children, title, keywords, description, viewport, robots}) => 
                                             <li className="w-full">
                                                 <Link href={"/about"}>
                                                     <div
-                                                        className={"flex flex-col items-center shadow-2xl rounded-3xl px-5 bg-blue-500"}>
+                                                        className={"flex flex-col items-center shadow-2xl rounded-3xl px-5 bg-blue-500 hover:bg-blue-600"}>
                                                         <button
-                                                            className="flex flex-row justify-between items-center rounded-full hover:shadow-light-inner w-full  py-2 transition duration-300 shadow-light-inner ">
+                                                            className="flex flex-row justify-between items-center rounded-full w-full  py-2 transition duration-300 shadow-light-inner ">
                                                             <span>About</span>
                                                             <AiFillContacts/>
                                                         </button>
@@ -61,9 +63,9 @@ const Content = ({children, title, keywords, description, viewport, robots}) => 
                                             <li className="w-full">
                                                 <Link href={"/portfolio"}>
                                                     <div
-                                                        className={"flex flex-col items-center shadow-2xl rounded-3xl px-5 bg-blue-500"}>
+                                                        className={"flex flex-col items-center shadow-2xl rounded-3xl px-5 bg-blue-500 hover:bg-blue-600"}>
                                                         <button
-                                                            className={"flex flex-row justify-between items-center rounded-full hover:shadow-light-inner w-full  py-2 transition duration-300 shadow-light-inner"}>
+                                                            className={"flex flex-row justify-between items-center rounded-full w-full  py-2 transition duration-300 shadow-light-inner"}>
                                                             <span>Portfolio</span>
                                                             <AiFillCamera/>
                                                         </button>
@@ -73,9 +75,9 @@ const Content = ({children, title, keywords, description, viewport, robots}) => 
                                             <li className={"w-full"}>
                                                 <Link href={"/contact"}>
                                                     <div
-                                                        className={"flex flex-col items-center shadow-2xl rounded-3xl px-5 bg-blue-500"}>
+                                                        className={"flex flex-col items-center shadow-2xl rounded-3xl px-5 bg-blue-500 hover:bg-blue-600"}>
                                                         <button
-                                                            className={"flex flex-row justify-between items-center rounded-full hover:shadow-light-inner w-full py-2 transition duration-300 shadow-light-inner"}>
+                                                            className={"flex flex-row justify-between items-center rounded-full w-full py-2 transition duration-300 shadow-light-inner"}>
                                                             <span>Contact</span>
                                                             <AiFillPhone/>
                                                         </button>
