@@ -1,7 +1,4 @@
 import Head from "next/head";
-import {Section} from "../../elements/section/section";
-import Image from "next/image";
-import vladimir75vov from "../../../public/vladimir75vov.png"
 
 const _title = "Curriculum vitae vladimir75vov"
 const _keywords = "Curriculum vitae vladimir75vov keywords"
@@ -27,8 +24,8 @@ const Header = ({
                 <meta name={"robots"} content={robots}/>
                 <link rel={"icon"} href={"/favicon.ico"}/>
             </Head>
-            <header className={"sidebar"}>
-
+            <header>
+                header
             </header>
             {children}
         </>
