@@ -6,18 +6,16 @@ import {AiFillCamera, AiFillContacts, AiFillHome, AiFillPhone} from "react-icons
 import Link from "next/link";
 import {Particle} from "../../elements/particle/particle";
 
-const Content = ({children, title, keywords, description, viewport, robots}) => {
+const Content = ({children}) => {
     return (
         <>
-            <Particle/>
             <div className={"bg-gray-100"}>
-                <Header title={title} keywords={keywords} description={description} viewport={viewport}
-                        robots={robots}/>
+                <Header/>
                 <main>
                     <div className={"container px-5 py-24 mx-auto"}>
-                        <div className={"flex flex-row gap-8 w-11/12 mx-auto"}>
-                            <div className={""}>
-                                <div className={"flex flex-col items-center py-16 shadow-2xl rounded-3xl w-72"}>
+                        <div className={"flex lg:flex-row flex-col gap-4 xl:max-w-screen-xl sm:max-w-screen-sm w-11/12 mx-auto"}>
+                            <div className={"lg:mb-14 xl:w-96 lg:w-72 w-full"}>
+                                <div className={"flex flex-col items-center py-16 shadow-2xl rounded-3xl"}>
                                     <div>
                                         <Link href={"/general"}>
                                             <div className="mb-8 w-48 shadow-2xl p-2 rounded-full">
