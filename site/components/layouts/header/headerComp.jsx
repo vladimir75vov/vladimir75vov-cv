@@ -1,4 +1,4 @@
-const Header = ({children,}) => {
+const HeaderComp = ({children,}) => {
     return (
         <>
             <header>
@@ -9,4 +9,4 @@ const Header = ({children,}) => {
     )
 }
 
-export {Header}
+export {HeaderComp}

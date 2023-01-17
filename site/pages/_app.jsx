@@ -1,15 +1,15 @@
 import '../styles/globals.scss'
 import NextNProgress from 'nextjs-progressbar';
-import {Particle} from "../components/elements/particle/particle";
-import {Content} from "../components/layouts/content/content";
+import {ParticleComp} from "../components/elements/particle/particleComp";
+import {ContentComp} from "../components/layouts/content/contentComp";
 
 export default function App({Component, pageProps}) {
     return (
         <>
             <NextNProgress color="#3b82f6" showOnShallow={true}/>
-            <Particle/>
-            <Content>
+            <ParticleComp/>
+            <ContentComp>
                 <Component {...pageProps} />
-            </Content>
+            </ContentComp>
         </>)
 }

@@ -2,7 +2,7 @@ import Particles from "react-tsparticles";
 import {useCallback} from "react";
 import {loadFull} from "tsparticles";
 
-const Particle = ({children}) => {
+const ParticleComp = ({children}) => {
     const particlesInit = useCallback(async engine => {
         console.log(engine);
         await loadFull(engine);
@@ -16,7 +16,7 @@ const Particle = ({children}) => {
                 options={{
                     fullScreen: {
                         enable: true,
-                        zIndex: 0
+                        zIndex: 100
                     },
                     detectRetina: true,
                     fpsLimit: 120,
@@ -142,92 +142,92 @@ const Particle = ({children}) => {
                             image: [
                                 {
                                     src: "https://i.postimg.cc/63ZSRTPj/bootstrap-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/SR7vT3kc/css-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/ryS3w0xz/firebase-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/FsNqdrVp/github.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/8P4YL2yS/html-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/kghhpx3Y/js-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/25bXRVCk/kotlin-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/Dz9p2nzq/linux-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/NMRJFSyZ/mysql-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/x8Ysz5M8/net-core-icon.png",
                                     width: 20,
                                     height: 20
                                 }, {
                                     src: "https://i.postimg.cc/qqL1XKxL/net-framework-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/pVYcHNMF/node-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/Yqrn2Xty/python-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/c4FDvQH1/react-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/rwzfxK01/sass-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/s2hKHqJ1/typescript-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/Y9BR5RXR/vscode-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/Jn3xMXvL/vue-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/T1R9wwvW/wordpress-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/tgmQFYzW/C-Sharp-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/ydgqjsf5/java-icon.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }, {
                                     src: "https://i.postimg.cc/bJK7FWWv/sql-server-icon-transformed.png",
-                                    width: 20,
-                                    height: 20
+                                    width: 25,
+                                    height: 25
                                 }
 
                             ],
@@ -275,4 +275,4 @@ const Particle = ({children}) => {
     )
 }
 
-export {Particle}
+export {ParticleComp}

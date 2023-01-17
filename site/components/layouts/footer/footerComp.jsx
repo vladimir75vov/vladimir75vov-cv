@@ -1,4 +1,4 @@
-const Footer = ({children}) => {
+const FooterComp = ({children}) => {
     return (
         <>
             {children}
@@ -9,4 +9,4 @@ const Footer = ({children}) => {
     )
 }
 
-export {Footer}
+export {FooterComp}

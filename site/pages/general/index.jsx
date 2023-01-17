@@ -1,18 +1,20 @@
 import {SlSocialGithub, SlSocialGoogle, SlSocialInstagram, SlSocialVkontakte} from "react-icons/sl"
 import Link from "next/link";
-import {Heading} from "../../components/elements/heading/heading";
+import {HeadingComp} from "../../components/elements/heading/headingComp";
 import {AiFillPrinter, AiOutlineDownload} from "react-icons/ai";
-import {RxDiscordLogo} from "react-icons/all";
+import {RxDiscordLogo} from "react-icons/rx";
+import {FabComp} from "../../components/elements/fab/fabComp";
 
 export default function General() {
     return (
         <>
-            <Heading title={"test"}/>
+            <HeadingComp title={"General CV page"}
+                         description={"Vladimir Budaev, Front-End developer with React/Next and Tailwind, Back-End developer with Java/Python and Node"}/>
             <h1 className={"text-5xl text-gray-700 text-center leading-tight"}>
                 Vladimir Budaev
             </h1>
             <h3 className={"mt-2 text-lg text-gray-500 text-center"}>
-                Web Develo
+                Web Developer
             </h3>
             <ul className={"flex flex-row flex-wrap justify-center mt-5 gap-2"}>
                 <Link href={"https://vk.com/vladimir75vov"}>
@@ -46,24 +48,16 @@ export default function General() {
             </div>
             <div className={"flex flex-row flex-wrap justify-between mt-14 gap-3"}>
                 <div className={"flex flex-row"}>
-                    <div
-                        className={"flex flex-col items-center shadow-2xl rounded-3xl px-5 bg-blue-500 hover:bg-blue-600"}>
-                        <button
-                            className="flex flex-row justify-between items-center rounded-full w-full py-2 transition duration-300 shadow-light-inner ">
-                            <AiFillPrinter/>
-                            <span>Print My Cv</span>
-                        </button>
-                    </div>
+                    <FabComp>
+                        <AiFillPrinter className={"w-5 h-5"}/>
+                        <span>Print My Cv</span>
+                    </FabComp>
                 </div>
                 <div className={"flex flex-row"}>
-                    <div
-                        className={"flex flex-col items-center shadow-2xl rounded-3xl px-5 bg-blue-500 hover:bg-blue-600"}>
-                        <button
-                            className="flex flex-row justify-between items-center rounded-full w-full py-2 transition duration-300 shadow-light-inner ">
-                            <AiOutlineDownload/>
-                            <span>Download My Cv</span>
-                        </button>
-                    </div>
+                    <FabComp>
+                        <AiOutlineDownload className={"w-5 h-5"}/>
+                        <span>Download My Cv</span>
+                    </FabComp>
                 </div>
             </div>
         </>

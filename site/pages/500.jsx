@@ -1,9 +1,9 @@
-import {Heading} from "../components/elements/heading/heading";
+import {HeadingComp} from "../components/elements/heading/headingComp";
 
 export default function Custom500() {
     return (
         <>
-            <Heading title={"Server-side error occurred"} description={"Server-side error occurred"}/>
+            <HeadingComp title={"Server-side error occurred"} description={"Server-side error occurred"}/>
             <h1>500 - Server-side error occurred</h1>
             <div className={"flex flex-col items-center"}>
                 <h1 className={"font-bold text-blue-500 text-9xl"}>500</h1>

@@ -1,4 +1,4 @@
-const Button = ({children}) => {
+const ButtonComp = ({children}) => {
     return (
         <>
             <button className={"shadow-2xl rounded-3xl bg-blue-500"}>
@@ -8,4 +8,4 @@ const Button = ({children}) => {
     )
 }
 
-export {Button}
+export {ButtonComp}

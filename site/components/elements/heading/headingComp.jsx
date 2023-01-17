@@ -5,14 +5,14 @@ const _keywords = "Curriculum vitae vladimir75vov keywords"
 const _description = ""
 const _viewport = "width=device-width, initial-scale=1"
 const _robots = "all"
-const Heading = ({
-                     children,
-                     title = _title,
-                     keywords = _keywords,
-                     description = _description,
-                     viewport = _viewport,
-                     robots = _robots
-                 }) => {
+const HeadingComp = ({
+                         children,
+                         title = _title,
+                         keywords = _keywords,
+                         description = _description,
+                         viewport = _viewport,
+                         robots = _robots
+                     }) => {
     return (
         <>
             <Head>
@@ -27,4 +27,4 @@ const Heading = ({
     )
 }
 
-export {Heading}
+export {HeadingComp}

@@ -1,4 +1,4 @@
-const Section = ({children}) => {
+const SectionComp = ({children}) => {
     return (
         <>
             <div className={"flex flex-col items-center py-16 shadow-2xl rounded-3xl"}>
@@ -8,4 +8,4 @@ const Section = ({children}) => {
     )
 }
 
-export {Section}
+export {SectionComp}
