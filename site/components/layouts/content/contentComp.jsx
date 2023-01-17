@@ -28,7 +28,7 @@ const ContentComp = ({children}) => {
                                             </div>
                                         </Link>
                                         <h2 className="text-center text-3xl mb-2 text-gray-700">
-                                            Budaev Vladimir
+                                            Vladimir Budaev
                                         </h2>
                                         <h5 className="text-center text-gray-500 mb-2 text-lg">Front-End
                                             Developer</h5>
