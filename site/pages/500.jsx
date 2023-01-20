@@ -1,6 +1,11 @@
 import {HeadingComp} from "../components/elements/heading/headingComp";
+import Link from "next/link";
+import {FabComp} from "../components/elements/fab/fabComp";
+import {useRouter} from "next/router";
 
 export default function Custom500() {
+    const router = useRouter()
+
     return (
         <>
             <HeadingComp title={"Server-side error occurred"} description={"Server-side error occurred"}/>
@@ -14,6 +19,14 @@ export default function Custom500() {
                     Произошла ошибка на стороне сервера.
                 </p>
                 <div className={"flex flex-col space-y-2"}>
+                    <Link href={"/"}>
+                        <FabComp>
+                            Домой
+                        </FabComp>
+                    </Link>
+                    <FabComp onClick={() => router.back()}>
+                        Назад
+                    </FabComp>
                 </div>
             </div>
 

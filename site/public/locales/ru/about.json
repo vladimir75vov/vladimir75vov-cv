@@ -1,0 +1,19 @@
+{
+  "lastFirstName": "Владимир Будаев",
+  "description1": "Интерфейсный разработчик",
+  "description2": "Владимир Будаев, Front-End разработчик с React и tailwind",
+  "table": {
+    "one": {
+      "name": "Имя",
+      "age": "Возраст",
+      "city": "Город",
+      "cityDescription": "Москва, Россия"
+    },
+    "two": {
+      "email": "Почта",
+      "phone": "Телефон",
+      "remote": "Дистанционный",
+      "remoteDescription": "Да"
+    }
+  }
+}

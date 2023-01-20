@@ -1,9 +1,7 @@
 import {SlSocialGithub, SlSocialGoogle, SlSocialInstagram, SlSocialVkontakte} from "react-icons/sl"
 import Link from "next/link";
 import {HeadingComp} from "../../components/elements/heading/headingComp";
-import {AiFillPrinter, AiOutlineDownload} from "react-icons/ai";
 import {RxDiscordLogo} from "react-icons/rx";
-import {FabComp} from "../../components/elements/fab/fabComp";
 
 export default function General() {
     return (
@@ -46,21 +44,6 @@ export default function General() {
             <div className="mx-auto w-56 h-1 bg-gray-200 rounded overflow-hidden mb-4 mt-5">
                 <div className="w-1/3 h-full bg-blue-500 "></div>
             </div>
-            <div className={"flex flex-row flex-wrap justify-between mt-14 gap-3"}>
-                <div className={"flex flex-row"}>
-                    <FabComp>
-                        <AiFillPrinter className={"w-5 h-5"}/>
-                        <span>Print My Cv</span>
-                    </FabComp>
-                </div>
-                <div className={"flex flex-row"}>
-                    <FabComp>
-                        <AiOutlineDownload className={"w-5 h-5"}/>
-                        <span>Download My Cv</span>
-                    </FabComp>
-                </div>
-            </div>
         </>
     )
 }
-//h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden

@@ -1,0 +1,19 @@
+{
+  "lastFirstName": "Vladimir Budaev",
+  "description1": "Front-End Developer",
+  "description2": "Vladimir Budaev, Front-End developer with React and tailwind",
+  "table": {
+    "one": {
+      "name": "Name",
+      "age": "Age",
+      "city": "City",
+      "cityDescription": "Moscow, Russia"
+    },
+    "two": {
+      "email": "Email",
+      "phone": "Phone",
+      "remote": "Remote",
+      "remoteDescription": "Yes"
+    }
+  }
+}

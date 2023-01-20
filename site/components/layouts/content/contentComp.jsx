@@ -2,7 +2,7 @@ import {HeaderComp} from "../header/headerComp";
 import {FooterComp} from "../footer/footerComp";
 import Image from "next/image";
 import vladimir75vov from "../../../public/vladimir75vov.png";
-import {AiFillCamera, AiFillContacts, AiFillHome, AiFillPhone} from "react-icons/ai";
+import {AiFillCamera, AiFillContacts, AiFillHome, AiFillPhone, AiFillPrinter, AiOutlineDownload} from "react-icons/ai";
 import Link from "next/link";
 import {FabComp} from "../../elements/fab/fabComp";
 import {Paper} from "@mui/material";
@@ -76,10 +76,25 @@ const ContentComp = ({children}) => {
                                 <Paper className={"flex flex-col items-center  py-16 shadow-2xl rounded-3xl"}>
                                     <div className={"flex flex-col w-full shadow-light-outer bg-light rounded-3xl p-9"}>
                                         {children}
+
+                                        <div className={"flex flex-row flex-wrap justify-between mt-14 gap-3"}>
+                                            <div className={"flex flex-row"}>
+                                                <FabComp>
+                                                    <AiFillPrinter className={"w-5 h-5"}/>
+                                                    <span>Print My Cv</span>
+                                                </FabComp>
+                                            </div>
+                                            <div className={"flex flex-row"}>
+                                                <FabComp>
+                                                    <AiOutlineDownload className={"w-5 h-5"}/>
+                                                    <span>Download My Cv</span>
+                                                </FabComp>
+                                            </div>
+                                        </div>
                                     </div>
                                 </Paper>
                                 <Paper
-                                    className={"flex flex-col items-center py-4 shadow-2xl px-6 rounded-3xl mx-auto"}>
+                                    className={"flex flex-col items-center bg-white py-4 shadow-2xl px-6 rounded-3xl mx-auto"}>
                                     <a className={"text-sm text-gray-600"}>Develop By Vladimir Budaev</a>
                                 </Paper>
                             </div>
@@ -93,6 +108,5 @@ const ContentComp = ({children}) => {
 }
 
 export {ContentComp}
-
 //container mx-auto bg-gray-100 items-center p-8 border rounded-b-lg border-b-indigo-600 shadow-2xl rounded-3xl
 
