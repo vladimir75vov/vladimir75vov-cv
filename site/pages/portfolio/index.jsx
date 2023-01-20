@@ -10,7 +10,7 @@ export default function Portfolio() {
                          description={"Vladimir Budaev, Front-End developer with React/Next and Tailwind, Back-End developer with Java/Python and Node"}/>
             <div className={"flex flex-col"}>
                 <div className={"flex-wrap flex gap-2 items-center"}>
-                    <span className={"text-xl text-gray-700"}>
+                    <span className={"text-xl mainText"}>
                         Scanner hub for pickup
                     </span>
                     <span className={"shadow text-xs text-gray-400 py-1 px-4 rounded-full"}>
@@ -18,7 +18,7 @@ export default function Portfolio() {
                     </span>
                 </div>
                 <div className={"flex-wrap flex gap-2 mb-2.5 items-center"}>
-                     <span className={"text-xl text-gray-700"}>
+                     <span className={"text-xl secondText"}>
                         with React,Tailwind,JavaScript and Mobile dev
                     </span>
                 </div>
@@ -27,9 +27,9 @@ export default function Portfolio() {
                         <div className={"ml-0.5 text-gray-700"}>
                             <MdOutlineRemoveRedEye/>
                         </div>
-                        <span className="text-gray-700 dark:text-gray-400">
+                        <span className="mainText">
                             View 
-                            <Link href={"https://cos-leroymerlin.web.app/"} className={"text-blue-500"}>
+                            <Link href={"https://cos-leroymerlin.web.app/"} className={"switch-blue-500 hover:switch-blue-600"}>
                                 Demo
                             </Link>
                         </span>
@@ -38,9 +38,9 @@ export default function Portfolio() {
                         <div className={"ml-0.5 text-gray-700"}>
                             <FiGithub/>
                         </div>
-                        <span className="text-gray-700 dark:text-gray-400">
+                        <span className="mainText">
                             View 
-                            <Link href={"https://github.com/vladimir75vov/COS-LeroyMerlin"} className={"text-blue-500"}>
+                            <Link href={"https://github.com/vladimir75vov/COS-LeroyMerlin"} className={"switch-blue-500 hover:switch-blue-600"}>
                                 Demo
                             </Link>
                         </span>

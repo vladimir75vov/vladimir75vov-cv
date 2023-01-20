@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body{
+    @apply bg-gray-100 dark:bg-gray-900
+  }
+
+  .paper-white {
+    @apply bg-white dark:bg-gray-800;
+  }
+
+  .paper-gray-100 {
+    @apply bg-white dark:bg-gray-900;
+  }
+
+  .switch-blue-500{
+    @apply text-blue-500 dark:text-blue-600
+  }
+
+  .switch-blue-600{
+    @apply text-blue-600 dark:text-blue-700
+  }
+
+  .blue-500{
+    @apply bg-blue-500 dark:bg-blue-600;
+  }
+
+  .blue-600{
+    @apply bg-blue-600 dark:bg-blue-700;
+  }
+
+  .mainText{
+    @apply text-gray-900 dark:text-white
+  }
+
+  .secondText{
+    @apply text-gray-500 dark:text-gray-400
+  }
+}
