@@ -1,6 +1,6 @@
-import {HeadingComp} from "../../components/elements/heading/headingComp";
+import {HeadingComp} from "../../../components/elements/heading/headingComp";
 import Link from "next/link";
-import {FabComp} from "../../components/elements/fab/fabComp";
+import {FabComp} from "../../../components/elements/fab/fabComp";
 import {useRouter} from "next/router";
 
 export default function Custom500() {

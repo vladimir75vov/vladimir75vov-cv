@@ -3,6 +3,8 @@ import NextNProgress from 'nextjs-progressbar';
 import {ParticleComp} from "../components/elements/particle/particleComp";
 import {ContentComp} from "../components/layouts/content/contentComp";
 import {ThemeProvider} from "next-themes";
+import {appWithTranslation} from "next-i18next";
+import { getStaticPaths, makeStaticProps } from "../lib/getStatic"
 
 function App({Component, pageProps}) {
     return (
@@ -17,4 +19,7 @@ function App({Component, pageProps}) {
         </>)
 }
 
-export default App
+export default appWithTranslation(App)
+
+const getStaticProps = makeStaticProps(["general"])
+export { getStaticPaths, getStaticProps }

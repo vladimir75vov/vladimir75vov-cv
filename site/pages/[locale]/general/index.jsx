@@ -1,18 +1,22 @@
 import {SlSocialGithub, SlSocialGoogle, SlSocialInstagram, SlSocialVkontakte} from "react-icons/sl"
 import Link from "next/link";
-import {HeadingComp} from "../../components/elements/heading/headingComp";
+import {HeadingComp} from "../../../components/elements/heading/headingComp";
 import {RxDiscordLogo} from "react-icons/rx";
+import {useTranslation} from "next-i18next";
+import { getStaticPaths, makeStaticProps } from "../../../lib/getStatic"
 
 export default function General() {
+    const { t } = useTranslation(["general"])
+
     return (
         <>
             <HeadingComp title={"General CV page"}
                          description={"Vladimir Budaev, Front-End developer with React/Next and Tailwind, Back-End developer with Java/Python and Node"}/>
             <h1 className={"text-5xl mainText text-center leading-tight"}>
-                Vladimir Budaev
+                {t("general:lastFirstName")}
             </h1>
             <h3 className={"mt-2 text-lg secondText text-center"}>
-                Web Developer
+                {t("general:description")}
             </h3>
             <ul className={"flex flex-row flex-wrap justify-center mt-5 gap-2"}>
                 <Link href={"https://vk.com/vladimir75vov"}>
@@ -47,3 +51,6 @@ export default function General() {
         </>
     )
 }
+
+const getStaticProps = makeStaticProps(["general", "layout"])
+export { getStaticPaths, getStaticProps }

@@ -1,5 +1,5 @@
-import {HeadingComp} from "../../components/elements/heading/headingComp";
-import {FabComp} from "../../components/elements/fab/fabComp";
+import {HeadingComp} from "../../../components/elements/heading/headingComp";
+import {FabComp} from "../../../components/elements/fab/fabComp";
 import Link from "next/link";
 import {useRouter} from "next/router";
 

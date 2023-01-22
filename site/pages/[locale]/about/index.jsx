@@ -1,6 +1,8 @@
-import {HeadingComp} from "../../components/elements/heading/headingComp";
+import {HeadingComp} from "../../../components/elements/heading/headingComp";
 import {Paper, Slider} from "@mui/material";
 import {BsCalendarWeek} from "react-icons/bs";
+import {useTranslation} from "next-i18next";
+import { getStaticPaths, makeStaticProps } from "../../../lib/getStatic"
 
 export default function About() {
     const marks = [
@@ -25,35 +27,36 @@ export default function About() {
             value: 100,
         },
     ];
+    const { t } = useTranslation(["about"])
 
     return (
         <>
             <HeadingComp title={"About me CV page"}
                          description={"Vladimir Budaev, Front-End developer with React/Next and Tailwind, Back-End developer with Java/Python and Node"}/>
             <h1 className={"text-4xl mainText mt-8"}>
-                Vladimir Budaev
+                {t("about:lastFirstName")}
             </h1>
             <h3 className={"mt-2.5 text-lg text-gray-500"}>
-                Front-End Developer
+                {t("about:description1")}
             </h3>
 
             <p className={"mt-6 text-md text-gray-500 leading-7"}>
-                Vladimir Budaev, Front-End developer with React and tailwind
+                {t("about:description2")}
             </p>
 
             <div className={"flex flex-col lg:flex-row mt-6 gap-5 justify-center"}>
                 <Paper className={"mainText w-full rounded-2xl paper-gray-100 p-2 shadow-xl"}>
                     <li className={"flex flex-col lg:flex-row border-b justify-between"}>
                         <span className={"w-full lg:w-1/3 text-center py-2.5 pb-0 font-semibold"}>
-                            Name
+                            {t("about:table.one.name")}
                         </span>
                         <span className={"w-full lg:w-2/3 text-center py-2.5"}>
-                            Vladimir Budaev
+                            {t("about:lastFirstName")}
                         </span>
                     </li>
                     <li className={"flex flex-col lg:flex-row border-b justify-between"}>
                         <span className={"w-full lg:w-1/3 text-center py-2.5 pb-0 font-semibold"}>
-                            Age
+                            {t("about:table.one.age")}
                         </span>
                         <span className={"w-full lg:w-2/3 text-center py-2.5"}>
                             19
@@ -61,17 +64,17 @@ export default function About() {
                     </li>
                     <li className={"flex flex-col lg:flex-row justify-between"}>
                         <span className={"w-full lg:w-1/3 text-center py-2.5 pb-0 font-semibold"}>
-                            City
+                            {t("about:table.one.city")}
                         </span>
                         <span className={"w-full lg:w-2/3 text-center py-2.5"}>
-                            Moscow, Russia
+                            {t("about:table.one.cityDescription")}
                         </span>
                     </li>
                 </Paper>
                 <Paper className={"mainText w-full rounded-2xl paper-gray-100 p-2 shadow-xl"}>
                     <li className={"flex flex-col lg:flex-row border-b justify-between"}>
                         <span className={"w-full lg:w-1/3 text-center py-2.5 pb-0 font-semibold"}>
-                            Email
+                            {t("about:table.two.email")}
                         </span>
                         <span className={"w-full lg:w-2/3 text-center py-2.5"}>
                             vladimir75vov@gmail.com
@@ -79,7 +82,7 @@ export default function About() {
                     </li>
                     <li className={"flex flex-col lg:flex-row border-b justify-between"}>
                         <span className={"w-full lg:w-1/3 text-center py-2.5 pb-0 font-semibold"}>
-                            Phone
+                            {t("about:table.two.phone")}
                         </span>
                         <span className={"w-full lg:w-2/3 text-center py-2.5"}>
                             +7(903)709-51-73
@@ -87,10 +90,10 @@ export default function About() {
                     </li>
                     <li className={"flex flex-col lg:flex-row justify-between"}>
                         <span className={"w-full lg:w-1/3 text-center py-2.5 pb-0 font-semibold"}>
-                            Remote
+                            {t("about:table.two.remote")}
                         </span>
                         <span className={"w-full lg:w-2/3 text-center py-2.5"}>
-                            Yes
+                            {t("about:table.two.remoteDescription")}
                         </span>
                     </li>
                 </Paper>
@@ -303,3 +306,6 @@ export default function About() {
         </>
     )
 }
+
+const getStaticProps = makeStaticProps(["about", "layout"])
+export { getStaticPaths, getStaticProps }
