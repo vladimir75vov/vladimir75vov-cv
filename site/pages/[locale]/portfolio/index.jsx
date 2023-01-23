@@ -43,7 +43,7 @@ export default function Portfolio() {
                         </div>
                         <span className="mainText">
                             {t("portfolio:view")} 
-                            <Link href={"https://github.com/vladimir75vov/COS-LeroyMerlin"} className={"switch-blue-500 hover:switch-blue-600"}>
+                            <Link href={"https://github.com/vladimir75vov/COS-LeroyMerlin-public"} className={"switch-blue-500 hover:switch-blue-600"}>
                                 {t("portfolio:link")}
                             </Link>
                         </span>
